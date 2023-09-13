@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SelectItem } from 'primeng/api';
 import { ApiService } from '../apiService';
 
 @Component({
@@ -9,9 +10,41 @@ import { ApiService } from '../apiService';
 export class DriveComponent implements OnInit {
   data: any[] = [];
   targetData: any[] = [];
+  modelYearOptions: SelectItem[] = [];
+  healthChartOptions: SelectItem[] = [];
+  commodityFilterOptions: SelectItem[] = [];
+  programFilterOptions: SelectItem[] = [];
   constructor(private apiService: ApiService) {}
 
   ngOnInit() {
+    this.modelYearOptions = [
+      {
+        label: '2023.0 My',
+        value: '2023',
+      },
+      {
+        label: '2022.0 My',
+        value: '2024',
+      },
+    ];
+    this.healthChartOptions = [
+      {
+        label: 'eDrive Applications',
+        value: 'eDrive Applications',
+      },
+    ];
+    this.commodityFilterOptions = [
+      {
+        label: 'All',
+        value: 'All',
+      },
+    ];
+    this.programFilterOptions = [
+      {
+        label: 'All',
+        value: 'All',
+      },
+    ];
     this.apiService.getData().then((data) => (this.data = data));
     this.apiService.getTargetData().then((data) => (this.targetData = data));
   }

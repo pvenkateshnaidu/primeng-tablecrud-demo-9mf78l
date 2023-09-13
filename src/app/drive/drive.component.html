@@ -13,7 +13,26 @@
       ></button>
     </ng-template>
 
-    <ng-template pTemplate="right"> </ng-template>
+    <ng-template pTemplate="right">
+      <label class="p-mr-2"> Model Year: </label
+      ><p-dropdown [options]="modelYearOptions"></p-dropdown>
+
+      <label class="p-ml-2"> Health Chart : </label>
+      <p-dropdown
+        [options]="healthChartOptions"
+        styleClass="p-ml-2"
+      ></p-dropdown>
+      <label class="p-ml-2"> Commodity Filter : </label>
+      <p-dropdown
+      [options]="commodityFilterOptions"
+      styleClass="p-ml-2"
+    ></p-dropdown>
+    <label class="p-ml-2"> Program Filter : </label>
+    <p-dropdown
+    [options]="programFilterOptions"
+    styleClass="p-ml-2"
+  ></p-dropdown>
+    </ng-template>
   </p-toolbar>
   <p-table #dt [value]="data" [rowHover]="true" dataKey="id">
     <ng-template pTemplate="body" let-data>
