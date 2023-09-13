@@ -1,0 +1,44 @@
+<a [routerLink]="'/'">Back</a>
+<br />
+<p-toast></p-toast>
+
+<div class="card">
+  <p-toolbar styleClass="p-mb-4">
+    <ng-template pTemplate="left">
+      <button
+        pButton
+        pRipple
+        label="Save View"
+        class="p-button-success p-mr-2"
+      ></button>
+    </ng-template>
+
+    <ng-template pTemplate="right"> </ng-template>
+  </p-toolbar>
+  <p-table #dt [value]="data" [rowHover]="true" dataKey="id">
+    <ng-template pTemplate="body" let-data>
+      <tr>
+        <td style="width:15rem">
+          <strong>{{ data.columnName }}</strong>
+        </td>
+        <td *ngFor="let col of data.data">{{ col.name }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+  <button class="p-button-target p-mr-2">Target Setting</button>
+  <p-table #dt [value]="targetData" [rowHover]="true" dataKey="id">
+    <ng-template pTemplate="body" let-data>
+      <tr>
+        <td style="width:15rem">
+          {{ data.columnName }}
+        </td>
+        <td
+          *ngFor="let col of data.data"
+          [ngStyle]="{ background: getCellColor(col.name) }"
+        >
+          {{ col.name }}
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

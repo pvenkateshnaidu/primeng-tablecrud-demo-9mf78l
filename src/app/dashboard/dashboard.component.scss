@@ -1,0 +1,11 @@
+:host ::ng-deep {
+  .p-datatable {
+    width: 100%;
+  }
+  .p-datatable tr td {
+    background-color: rgb(0, 107, 205);
+    color: #fff;
+    border: 19px solid #fff;
+    border-radius: 35px;
+  }
+}

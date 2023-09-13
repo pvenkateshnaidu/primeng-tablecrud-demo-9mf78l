@@ -1,0 +1,39 @@
+<div class="card" style="margin:auto;width:30%">
+  <!-- <p-toolbar styleClass="p-mb-4">
+        <ng-template pTemplate="left">
+            <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-success p-mr-2" (click)="openNew()"></button>
+            <button pButton pRipple [label]="Delete" icon="pi pi-trash" class="p-button-danger" (click)="deleteSelectedProducts()" [disabled]="!selectedProducts || !selectedProducts.length"></button>
+        </ng-template>
+
+        <ng-template pTemplate="right">
+            <p-fileUpload mode="basic" accept="image/*" [maxFileSize]="1000000" label="Import" chooseLabel="Import" class="p-mr-2 p-d-inline-block"></p-fileUpload>
+            <button pButton pRipple label="Export" icon="pi pi-upload" class="p-button-help"></button>
+        </ng-template>
+    </p-toolbar> -->
+
+  <p-table
+    #dt
+    [value]="organizations"
+    [(selection)]="selectedOrg"
+    selectionMode="single"
+    (onRowSelect)="onRowSelect($event)"
+    [rowHover]="true"
+    dataKey="orgId"
+  >
+    <ng-template pTemplate="caption">
+      <div class="p-d-flex p-ai-center p-jc-between" style="text-align:cenetr">
+        <h5 class="p-m-0 text-center" style="text-align:cenetr">
+          Select PD Organazation
+        </h5>
+      </div>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-org>
+      <tr [pSelectableRow]="org">
+        <td style="padding:1rem;text-align:center">
+          {{ org.orgCd }}
+        </td>
+      </tr>
+    </ng-template>
+  </p-table>
+</div>

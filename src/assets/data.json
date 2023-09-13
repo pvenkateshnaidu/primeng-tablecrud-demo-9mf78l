@@ -1,0 +1,76 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "columnName": "Model Year",
+      "data": [
+        {
+          "name": "2023.0"
+        },
+        {
+          "name": "2023.0"
+        },
+        {
+          "name": "2023.0"
+        },
+        {
+          "name": "2023.0"
+        },
+        {
+          "name": "2023.0"
+        },
+        {
+          "name": "2023.0"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "columnName": "Program",
+      "data": [
+        {
+          "name": "2023.0 P708"
+        },
+        {
+          "name": "2023.0 U55X"
+        },
+        {
+          "name": "2023.0 "
+        },
+        {
+          "name": "2023.0"
+        },
+        {
+          "name": "2023.0"
+        },
+        {
+          "name": "2023.0"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "columnName": "CBG",
+      "data": [
+        {
+          "name": "FNA"
+        },
+        {
+          "name": "FNA"
+        },
+        {
+          "name": "APA"
+        },
+        {
+          "name": "FNA"
+        },
+        {
+          "name": "FNA"
+        },
+        {
+          "name": "FNA"
+        }
+      ]
+    }
+  ]
+}

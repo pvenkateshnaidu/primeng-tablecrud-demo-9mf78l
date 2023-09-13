@@ -1,0 +1,100 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "columnName": "Investment Cost",
+      "data": [
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "columnName": "Variable Cost",
+      "data": [
+        {
+          "name": "Y"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "columnName": "Resources",
+      "data": [
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "columnName": "Quality",
+      "data": [
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        },
+        {
+          "name": "G"
+        }
+      ]
+    }
+  ]
+}
